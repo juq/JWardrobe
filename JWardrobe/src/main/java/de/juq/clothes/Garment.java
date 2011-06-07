@@ -12,6 +12,14 @@ import de.juq.clothes.characteristics.Season;
 import de.juq.clothes.characteristics.Size;
 
 public class Garment {
+	
+	public Garment() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Garment(PurchaseDate purchaseDate) {
+		super();
+	}
 
 	public GarmentColor getColor() {
 		return new GarmentColorImpl();

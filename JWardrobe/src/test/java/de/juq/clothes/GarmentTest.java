@@ -17,6 +17,12 @@ import de.juq.clothes.characteristics.Size;
 public class GarmentTest {
 
 	@Test
+	public void testConstructor() throws Exception {
+		new Garment(new PurchaseDate() {
+		});
+	}
+
+	@Test
 	public void testColor() throws Exception {
 		assertEquals(true, new Garment().getColor() instanceof GarmentColor);
 	}
@@ -35,6 +41,12 @@ public class GarmentTest {
 	@Test
 	public void testAge() throws Exception {
 		assertEquals(true, new Garment().getAge() instanceof Age);
+	}
+
+	@Test
+	public void testCalculateAge() throws Exception {
+		new Garment(new PurchaseDate() {
+		});
 	}
 
 	@Test
